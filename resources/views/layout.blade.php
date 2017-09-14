@@ -50,11 +50,20 @@
               <ul class="dropdown-menu">
                 <li>
                   <a href="{{ route('all') }}">
-                    Todos los usuarios (All)
+                    Todos los Usuarios (All)
+                  </a>
+                </li>
+                <li>
+                  <a href="{{ route('get', 'f') }}">
+                    Lista de Usuarios Mujeres (Get)
+                  </a>
+                </li>
+                <li>
+                  <a href="{{ route('get', 'm') }}">
+                    Lista de Usuarios Hombres (Get)
                   </a>
                 </li>
               </ul>
-
             </li>
 
             <li><a href="#about">Acerca de</a></li>

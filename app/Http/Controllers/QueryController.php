@@ -13,6 +13,14 @@ class QueryController extends Controller
 {
     public function getAll() {
     	$users = User::all();
-    	return view('query.all', compact('users'));
+    	$title = "Todos los Usuarios (All)";
+    	return view('query.methods', compact('title', 'users'));
     }
+
+    public function getGet($gender) {
+    	$users = User::where('gender', $gender)->get();
+    	$title = "Lista de Usuarios (Get)";
+    	return view('query.methods', compact('title', 'users'));
+    }
+
 }
