@@ -19,7 +19,7 @@
 
     <style>
       body {
-        margin-top: 60px;  
+        margin-top: 50px;  
       }
     </style>
 
@@ -41,8 +41,26 @@
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
             <li class="active"><a href="{{ route('home') }}">Home</a></li>
+
+            <li class="dropdown">
+              <a href="#" class="dropdown-togggle" data-toggle="dropdown">
+                Consultas Eloquent
+                <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="{{ route('all') }}">
+                    Todos los usuarios (All)
+                  </a>
+                </li>
+              </ul>
+
+            </li>
+
             <li><a href="#about">Acerca de</a></li>
             <li><a href="#contact">Contactenos</a></li>
+
+
           </ul>
         </div><!--/.nav-collapse -->
       </div>
