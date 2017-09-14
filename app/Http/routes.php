@@ -25,3 +25,8 @@ Route::get('/get/{gender}', [
     'as' => 'get',
     'uses' => 'QueryController@getGet'
 ]);
+
+Route::get('/get-custom', [
+    'as' => 'get-custom',
+    'uses' => 'QueryController@getCustom'
+]);

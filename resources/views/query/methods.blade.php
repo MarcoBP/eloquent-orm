@@ -10,7 +10,7 @@
 		<tr>
 			<th>ID</th>
 			<th>Nombre</th>
-			<th>Email</th>
+			<th style=”display:none”>Email</th>
 			<th>Genero</th>
 			<th>Biografia</th>
 		</tr>
