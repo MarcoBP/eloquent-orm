@@ -30,3 +30,8 @@ Route::get('/get-custom', [
     'as' => 'get-custom',
     'uses' => 'QueryController@getCustom'
 ]);
+
+Route::get('/delete/{id}', [
+    'as' => 'delete',
+    'uses' => 'QueryController@delete'
+]);
