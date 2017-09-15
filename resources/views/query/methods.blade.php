@@ -10,13 +10,13 @@
 		<tr>
 			<th>ID</th>
 			<th>Nombre</th>
-			<th style=”display:none”>Email</th>
+			<th>Email</th>
 			<th>Genero</th>
 			<th>Biografia</th>
 		</tr>
 	</thead>
 	<tbody>
-		@include('query.partials.list-users')
+		@include('partials.list-users')
 	</tbody>
 </table>
 
