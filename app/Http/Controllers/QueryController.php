@@ -5,7 +5,6 @@ namespace EloquentORM\Http\Controllers;
 use EloquentORM\User;
 
 use Illuminate\Http\Request;
-
 use EloquentORM\Http\Requests;
 use EloquentORM\Http\Controllers\Controller;
 
@@ -34,5 +33,12 @@ class QueryController extends Controller
         $user->delete();
         return view('pages.delete');
     }
+
+    public function lists() {
+        $users = User::orderBy('name', 'ASC')
+                ->lists('name', 'id');
+        return view('query.lists', compact('users'));
+    }
+
 
 }

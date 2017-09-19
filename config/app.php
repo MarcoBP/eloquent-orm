@@ -145,11 +145,10 @@ return [
         EloquentORM\Providers\EventServiceProvider::class,
         EloquentORM\Providers\RouteServiceProvider::class,
 
-        /*
-         * Vendor...
+        /**
+         * Vendor
          */
         Collective\Html\HtmlServiceProvider::class,
-
     ],
 
     /*
@@ -201,9 +200,8 @@ return [
         /*
          * Vendor...
          */
-        'Form'      => Collective\Html\FormFacade::class,
-        'Html'      => Collective\Html\HtmlFacade::class,
-
+        'Form' => Collective\Html\FormFacade::class,
+        'Html' => Collective\Html\HtmlFacade::class,
     ],
 
 ];

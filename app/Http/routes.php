@@ -35,3 +35,8 @@ Route::get('/delete/{id}', [
     'as' => 'delete',
     'uses' => 'QueryController@delete'
 ]);
+
+Route::get('/lists', [
+    'as' => 'lists',
+    'uses' => 'QueryController@lists'
+]);

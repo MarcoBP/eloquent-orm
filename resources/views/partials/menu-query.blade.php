@@ -18,3 +18,8 @@
                     Lista de Usuarios (Get Custom con Array)
                   </a>
                 </li>
+                <li>
+                  <a href="{{ route('lists') }}">
+                    Lista de Usuarios para Select (LISTS)
+                  </a>
+                </li>
