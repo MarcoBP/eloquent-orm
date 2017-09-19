@@ -28,3 +28,8 @@
                     First Last
                   </a>
                 </li>
+                <li>
+                  <a href="{{ route('paginate') }}">
+                    Paginate Eloquent
+                  </a>
+                </li>
